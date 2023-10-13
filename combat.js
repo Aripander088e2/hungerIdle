@@ -156,7 +156,7 @@ function getReward(char, enemy) {
             if (char.base[property] === undefined) {
                 char.base[property] = 0;
             }
-            char.base[property] = round5(char.base[property] + (enemy.reward[property] / 100));
+            char.base[property] = round5(char.base[property] + (enemy.reward[property] / 20));
         }
     }
 }
