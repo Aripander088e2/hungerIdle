@@ -1,0 +1,169 @@
+Kill enemies for their stats!
+
+Choose enemy, starting attack speed is 3 seconds
+lower than 200 ms instead double attacks
+
+
+TO ADD A NEW STAT:
+    enemyData.js, zeroStats, add the stat as 0
+    add it's effect in combat.js or statFormula.js
+    in mainview.js, printStats, add stat description / color / tooltip
+
+
+Stats:
+
+Stage 1:
+HP
+STR - +1 Phys Damage
+CON - Defense - ((CON)*0.06)/(1+0.06*(CON))
+AGI - Attack speed increase - (AGI*0.007)/(1+0.001*AGI)
+hunt - find enemies faster
+recover - health gain from consume
+scavenge - speed of consume
+
+
+Stage 2:
+stamina - used for physical actions
+DEX - +1 Starting dmg - when enemy health is >80%
+Harden - +1 Block, after CON
+Spines - Uses stamina, DEX for dmg, sta reduction (STA*0.06)/(1+0.06*STA)
+thorns - reflect
+
+
+Stage 3:
+PER - +1 defense when health is <50%
+Reflex - +1 defense when health is >=50%
+Luck - chance for double stats on absorb
+shield - reduce dmg by # for first # hits
+Sunder - reduce enemy block
+
+
+Stage 4:
+MP
+MP Regen
+WIS - Spell Efficiency - ((WIS)*0.06)/(1+0.06*(WIS))
+INT - +1 Spell Damage
+Grace - Spell Defense - ((GRC)*0.06)/(1+0.06*(GRC))
+Locate - find encounters faster using mana
+
+
+Stage 5:
+elements - do more dmg to other elements, add elemental dmg to your attacks
+    dark <-> light
+    fire -> wind -> earth -> water -> fire
+Harmony - reduce element specific dmg
+rage - more damage as battle continues
+chill - reduce enemy attack speed as battle continues
+adrenaline - more attack speed as battle continues
+
+Stage 6:
+Open Wound - 1x / 1.5x
+Combo attack - 1x / 2x / 3x dmg
+Power Attack - 1x / 1x / 1x / 4x
+
+
+Plants
+	Moss - no damage, gain health
+	Mushroom - low damage, gain health regen
+	Flower - reflect, gain attack
+	thorny bush - reflect, gain CON
+	Tree - gain harden, gain HP
+	cactus - gain thorns
+	Piranha Plant - gain attack
+	Lotus - gain mana
+	mandrake - gain ?
+Critters
+	Toad - gain scavenge, gain health, regen
+	Beetle - gain harden, gain STR
+	Squirrel - gain AGI, gain hunt
+	Snake - gain DEX, gain CON
+	Rat - gain stamina, gain PER
+	Giant Spider - gain poison, gain recover
+
+next: spines, stamina, scavenge,
+
+
+Small Monsters
+Beasts
+	Porcupine
+	Honeybadger
+	Deer
+	Boar
+	WOlf
+	Bear
+
+Humanoids 1 (civilians)
+	Goblin
+	Kobold
+	Villager
+	Orc
+	Minotaur
+Monsters
+Humanoids 2 (adventurers)
+Undead
+Elementals
+Large Monsters
+Aberrations
+Dragons
+Humanodis 3 (immortals)
+Spirits
+Gods
+
+
+When you kill the last God, you unlock the void run
+void run is "go as far as you can", if you are satisfied you prestige with currency based on distance
+spend currency on bonuses:
+Soul bond - gain 2x/3x/4x... of stats until you hit the max of all your runs
+Talent, one for each stat, gain 2x/3x/4x of it.
+Extra spells?
+Challenges - unbalanced stat gains, gain an extra stat after completion
+	Maple run - 4x defense gain, 2x poison/acid stat gain, 1/4 other stats
+	Sakura run - very low max MP, high spell efficiency
+	Sasuke - learn faster, less MP
+	Naruto - High phsyical + max + regen, low specialty stats
+	Luffy - high physical, high stamina, low magic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+burn - deal damage over 3 turns
+acid - deal damage over 4 turns
+Poison - deal damage over 5 turns
+bleed - deal damage over 6 turns
+curse - deal damage over 10 turns
+
+
+
+
+%s - not til way later
+crit / crit dmg
+heavy attack
+dodge
+
+
+
+Enemy progression
+    Flower
+    Bush
+    Grasshopper
+    Mouse
+    Frog
+    Spider
