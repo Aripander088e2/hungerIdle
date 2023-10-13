@@ -1,13 +1,13 @@
 'use strict';
 
-let gameSpeed = 1;
-let bonusSpeed = 1;
+let gameSpeed = 2;
+let bonusSpeed = 4;
 
 let curTime = new Date();
 let gameTicksLeft = 0;
 let sudoStop = false;
 let saveTimer = 10000;
-let ticksPerSecond = 20;
+let ticksPerSecond = 60;
 let totalTime = 0;
 
 let prevTime = curTime;
